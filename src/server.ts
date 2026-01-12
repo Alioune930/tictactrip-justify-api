@@ -5,8 +5,6 @@ import swaggerUi from "swagger-ui-express";
 import { swaggerSpec } from "./swagger";
 
 const app = express();
-const PORT = 3000;
-
 // Pour recevoir JSON
 app.use(express.json());
 
@@ -25,6 +23,9 @@ app.get('/', (_req, res) => {
 app.use("/api-docs", swaggerUi.serve, swaggerUi.setup(swaggerSpec));
 
 // Démarrage du serveur
+const PORT = process.env.PORT || 3000;
+
 app.listen(PORT, () => {
   console.log(`Server running on port ${PORT}`);
 });
+

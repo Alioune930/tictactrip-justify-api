@@ -1,3 +1,22 @@
+/**
+ * @swagger
+ * /api/token:
+ *   post:
+ *     summary: Génère un token d'accès
+ *     requestBody:
+ *       required: true
+ *       content:
+ *         application/json:
+ *           schema:
+ *             type: object
+ *             properties:
+ *               email:
+ *                 type: string
+ *     responses:
+ *       200:
+ *         description: Token généré
+ */
+
 import { Router, Request, Response } from 'express';
 import { v4 as uuidv4 } from 'uuid';
 

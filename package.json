@@ -3,10 +3,11 @@
   "version": "1.0.0",
   "description": "API REST pour justifier du texte",
   "main": "index.js",
-  "scripts": {
-    "dev": "ts-node-dev src/server.ts",
-    "build": "tsc"
-  },
+ "scripts": {
+  "dev": "ts-node-dev src/server.ts",
+  "build": "tsc",
+  "start": "node dist/server.js"
+},
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Alioune930/tictactrip-justify-api.git"
