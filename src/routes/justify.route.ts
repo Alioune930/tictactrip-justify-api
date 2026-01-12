@@ -1,3 +1,25 @@
+/**
+ * @swagger
+ * /api/justify:
+ *   post:
+ *     summary: Justifie un texte sur 80 caractères par ligne
+ *     security:
+ *       - bearerAuth: []
+ *     requestBody:
+ *       required: true
+ *       content:
+ *         text/plain:
+ *           schema:
+ *             type: string
+ *     responses:
+ *       200:
+ *         description: Texte justifié
+ *       401:
+ *         description: Token manquant ou invalide
+ *       402:
+ *         description: Limite de mots dépassée
+ */
+
 import { Router, Request, Response } from 'express';
 import { tokens } from './token.route';
 import { canUseToken } from '../services/token.service';
