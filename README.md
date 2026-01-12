@@ -1,4 +1,13 @@
 TicTacTrip Justify API
+
+Déploiement :
+"""""URL publique (API déployée sur Render) : https://tictactrip-justify-api-alioune.onrender.com
+Test sur interface Swagger :
+ Accessible via :
+   https://tictactrip-justify-api-alioune.onrender.com/api-docs
+   Permet de visualiser l’API, générer un token et tester `/api/justify` directement depuis l’interface.""""""""
+
+
 Description
 
 API REST pour justifier du texte passé en paramètre.
@@ -22,7 +31,7 @@ npm install
 
 3 - Lancer le serveur en mode développement :
 npm run dev
-Le serveur tourne par défaut sur le port 3000
+Le serveur tourne par défaut sur le port 3000 si lancé en local sinon rdv directement à cette adresse https://tictactrip-justify-api-alioune.onrender.com/
 
 Endpoints
 POST /api/token
