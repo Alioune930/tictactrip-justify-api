@@ -71,3 +71,12 @@ src/server.ts               : serveur Express
 src/routes/token.route.ts  : génération des tokens
 src/routes/justify.route.ts : justification du texte
 src/services/token.service.ts : gestion des tokens et limites
+
+Déploiement:
+
+URL publique (API déployée sur Render) : https://tictactrip-justify-api-alioune.onrender.com
+
+Test sur interface Swagger :
+ Accessible via :
+   https://tictactrip-justify-api-alioune.onrender.com/api-docs
+   Permet de visualiser l’API, générer un token et tester `/api/justify` directement depuis l’interface.
