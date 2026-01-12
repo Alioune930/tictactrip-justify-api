@@ -1,4 +1,4 @@
-import swaggerJSDoc from "swagger-jsdoc";
+import swaggerJSDoc from "swagger-jsdoc"; 
 
 export const swaggerOptions: swaggerJSDoc.Options = {
   definition: {
@@ -9,17 +9,17 @@ export const swaggerOptions: swaggerJSDoc.Options = {
       description: "API REST pour justifier du texte sur 80 caractères",
     },
     components: {
-  securitySchemes: {
-    bearerAuth: {
-      type: "http",
-      scheme: "bearer",
+      securitySchemes: {
+        bearerAuth: {
+          type: "http",
+          scheme: "bearer",
+        },
+      },
     },
-  },
-},
-
     servers: [
       {
-        url: "http://localhost:3000",
+        // Utiliser l'URL publique de Render si disponible
+        url: process.env.RENDER_EXTERNAL_URL || "http://localhost:3000",
       },
     ],
   },
